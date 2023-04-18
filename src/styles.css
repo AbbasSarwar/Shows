@@ -23,6 +23,10 @@ header span {
   border: 2px solid black;
   border-radius: 5%;
   padding: 5px 5px;
+}
+
+header span a {
+  text-decoration: none;
   color: rgb(245, 195, 211);
 }
 
@@ -56,4 +60,48 @@ header nav ul li:first-child a {
 footer {
   margin-top: auto;
   padding: 20px 20px;
+  color: #fff;
+  background-color: #363535;
+  text-align: center;
+}
+
+.cards-container {
+  padding: 50px 80px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 150vh;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 5vh;
+  margin: 20px;
+}
+
+.card button {
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 3px;
+  font-size: 16px;
+  padding: 3px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: rgb(173, 173, 229);
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 8px 0;
 }
