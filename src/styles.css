@@ -67,14 +67,18 @@ footer {
 
 .cards-container {
   padding: 50px 80px;
+    width: 84%;
+    display: flex;
+    margin: auto;
 }
 
 .cards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 150vh;
-  justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 117%;
+    height: 141vh;
+    justify-content: space-between;
 }
 
 .card {
