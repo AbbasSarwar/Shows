@@ -56,4 +56,5 @@ header nav ul li:first-child a {
 footer {
   margin-top: auto;
   padding: 20px 20px;
+  margin: 0;
 }
