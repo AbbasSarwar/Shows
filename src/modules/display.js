@@ -1,9 +1,10 @@
 import getLikes from './getLikes.js';
 import LikesAdd from './likeCounts.js';
+import popup from './displaypopup.js';
 
 async function retrevingdata() {
   const results = [];
-  for (let i = 1; i < 9; i += 1) {
+  for (let i = 1; i < 7; i += 1) {
     results.push(fetch(`https://api.tvmaze.com/shows/${i}`).then((res) => res.json()));
   }
   const dt = Promise.all(results);
@@ -15,10 +16,10 @@ const display = async () => {
   const container = document.querySelector('.cards');
   datas.forEach((cur) => {
     container.innerHTML += `
-  <div class="card">
+  <div id=${cur.id} class="card">
   <img src="${cur.image.medium}" alt="">
   <div class="likes"><h4>${cur.name}</h4> <span><i class="fa-regular fa-heart like-btn" data-id="${cur.id}"></i><br><span data-item-id="${cur.id}" class="add">Likes</span></span></div>
-  <button>Comments</button>
+  <button class="comment-btn">Comments</button>
   <button>Reservations</button>
 </div>
   `;
@@ -31,6 +32,9 @@ const display = async () => {
       });
     });
   });
+  popup();
 };
+
 display();
+
 export default retrevingdata;

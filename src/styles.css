@@ -67,14 +67,18 @@ footer {
 
 .cards-container {
   padding: 50px 80px;
+  width: 84%;
+  display: flex;
+  margin: auto;
 }
 
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 150vh;
-  justify-content: center;
+  width: 117%;
+  height: 141vh;
+  justify-content: space-between;
 }
 
 .card {
@@ -104,4 +108,70 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 8px 0;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+  width: 80%;
+  border: 2px solid brown;
+  height: 480px;
+  transform: translate(-50%, 5%);
+  background: navajowhite;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 30%;
+  position: relative;
+  left: 10px;
+}
+
+.cross-btn {
+  display: flex;
+  position: relative;
+  left: 219px;
+  top: 20px;
+  font-size: 30px;
+  color: blue;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.ratingbox {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.genresbox {
+  position: relative;
+  top: 40px;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.genresbox:last-child {
+  position: relative;
+  right: 20px;
 }
