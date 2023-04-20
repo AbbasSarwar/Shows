@@ -8,6 +8,7 @@ const addclasses = () => {
   header.classList.add('blur');
   cardscontainer.classList.add('blur');
   footer.classList.add('blur');
+  body.style.overflow = 'hidden'
 };
 
 const removeclasses = () => {
@@ -17,6 +18,7 @@ const removeclasses = () => {
     cardscontainer.classList.remove('blur');
     footer.classList.remove('blur');
     body.lastElementChild.remove();
+    body.style.overflow = 'auto'
   });
 };
 const displaypopup = async (index) => {

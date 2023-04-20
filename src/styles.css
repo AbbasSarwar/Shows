@@ -120,11 +120,12 @@ footer {
   position: fixed;
   left: 50%;
   transition: 0.5s ease-in-out;
-  width: 80%;
+  width: 900px;
   border: 2px solid brown;
   height: 480px;
   transform: translate(-50%, 5%);
   background: navajowhite;
+  overflow: auto;
 }
 
 .image {
@@ -133,7 +134,7 @@ footer {
 }
 
 .image img {
-  width: 30%;
+  width: 20%;
   position: relative;
   left: 10px;
 }
@@ -141,7 +142,7 @@ footer {
 .cross-btn {
   display: flex;
   position: relative;
-  left: 219px;
+  left: 319px;
   top: 20px;
   font-size: 30px;
   color: blue;
