@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #00081d;
 }
 
 header {
@@ -16,18 +17,18 @@ header {
   flex-direction: row;
   padding: 30px 50px;
   justify-content: center;
-  background-color: #6b8083;
+  background-color: rgba(239, 20, 20, 0.4);
 }
 
 header span {
-  border: 2px solid black;
+  border: 2px solid rgb(240, 6, 6);
   border-radius: 5%;
   padding: 5px 5px;
 }
 
 header span a {
   text-decoration: none;
-  color: rgb(245, 195, 211);
+  color: rgb(255, 255, 255);
 }
 
 header h3 {
@@ -47,8 +48,14 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  transition: .4s ;
+}
+
+header nav ul li a:hover {
+  color: rgb(66, 244, 17);
 }
 
 header nav ul li:first-child a {
@@ -61,7 +68,7 @@ footer {
   margin-top: auto;
   padding: 20px 20px;
   color: #fff;
-  background-color: #363535;
+  background-color: rgba(239, 11, 11, 0.4);
   text-align: center;
 }
 
@@ -76,31 +83,38 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 117%;
-  height: 141vh;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
   justify-content: space-between;
+  color: #fff;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 15vw;
-  height: 5vh;
-  margin: 20px;
+  height: 100%;
+  border: 1px solid black;
+  background-color: #26073c;
+  border-radius: 3px;
 }
 
 .card button {
-  background-color: #fff;
+  background-color: red;
   border-radius: 2px;
   margin: 3px;
   font-size: 16px;
   padding: 3px 0;
   cursor: pointer;
   transition: 0.3s;
+  border: none;
+  color: #fff;
 }
 
 .card button:hover {
-  background-color: rgb(173, 173, 229);
+  background-color: rgb(40, 40, 103);
+  color: #c9cbf2;
 }
 
 .likes {
@@ -110,31 +124,67 @@ footer {
   padding: 8px 0;
 }
 
+.add-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Likes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .blur {
   filter: blur(10px);
   pointer-events: none;
   user-select: none;
 }
 
+.fa-heart {
+  font-size: 30px;
+  color: red;
+  transition: .3s;
+}
+
+.fa-heart:hover {
+  transform: scale(1.2);
+}
+
+.add {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Last-like {
+  color: red;
+}
+
 .popup-container {
   position: fixed;
   left: 50%;
   transition: 0.5s ease-in-out;
-  width: 900px;
+  width: 100%;
   border: 2px solid brown;
-  height: 480px;
+  height: 80%;
+  top: 5%;
   transform: translate(-50%, 5%);
-  background: navajowhite;
+  background: rgba(44, 3, 117, 0.6);
   overflow: auto;
+  color: #fff;
 }
 
 .image {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .image img {
-  width: 20%;
+  padding-top: 10px;
+  width: 40%;
+  height: 50vh;
   position: relative;
   left: 10px;
 }
@@ -145,7 +195,7 @@ footer {
   left: 319px;
   top: 20px;
   font-size: 30px;
-  color: blue;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 

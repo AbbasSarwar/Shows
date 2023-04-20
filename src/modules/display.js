@@ -4,7 +4,7 @@ import LikesAdd from './likeCounts.js';
 
 async function retrevingdata() {
   const results = [];
-  for (let i = 1; i < 7; i += 1) {
+  for (let i = 1; i < 9; i += 1) {
     results.push(fetch(`https://api.tvmaze.com/shows/${i}`).then((res) => res.json()));
   }
   const dt = Promise.all(results);
@@ -18,7 +18,17 @@ const display = async () => {
     container.innerHTML += `
   <div id=${cur.id} class="card">
   <img src="${cur.image.medium}" alt="">
-  <div class="likes"><h4>${cur.name}</h4> <span><i class="fa-regular fa-heart like-btn" data-id="${cur.id}"></i><br><span data-item-id="${cur.id}" class="add">Likes</span></span></div>
+  <div class="add-container">
+  <div class="likes"><h4>${cur.name}</h4></div>
+  <div class="Likes-container">
+  <div class="Like-icon">
+      <span><i class="fa-regular fa-heart like-btn" data-id="${cur.id}"></i></span>
+  </div>
+  <div class="Likes-Span">
+      <span data-item-id="${cur.id}" class="add"></span>
+      <span class="Last-like">Likes</span>
+  </div>
+  </div>
   <button class="comment-btn">Comments</button>
 </div>
   `;

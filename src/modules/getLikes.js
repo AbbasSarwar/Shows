@@ -9,7 +9,7 @@ const getLikes = async () => {
         if (matchingObject) {
           cur.innerHTML = matchingObject.likes;
         } else {
-          cur.innerHTML = 'Be the first to Like';
+          cur.innerHTML = '0';
         }
       });
     });
