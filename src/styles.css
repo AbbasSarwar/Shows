@@ -120,11 +120,12 @@ footer {
   position: fixed;
   left: 50%;
   transition: 0.5s ease-in-out;
-  width: 80%;
+  width: 900px;
   border: 2px solid brown;
   height: 480px;
   transform: translate(-50%, 5%);
   background: navajowhite;
+  overflow: auto;
 }
 
 .image {
@@ -133,7 +134,7 @@ footer {
 }
 
 .image img {
-  width: 30%;
+  width: 20%;
   position: relative;
   left: 10px;
 }
@@ -141,7 +142,7 @@ footer {
 .cross-btn {
   display: flex;
   position: relative;
-  left: 219px;
+  left: 319px;
   top: 20px;
   font-size: 30px;
   color: blue;
@@ -174,4 +175,44 @@ footer {
 .genresbox:last-child {
   position: relative;
   right: 20px;
+}
+
+form {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+}
+
+form h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+form input {
+  padding: 10px;
+  margin: 20px 5px 5px 5px;
+  width: 285px;
+}
+
+form textarea {
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  border: 1px solid black;
+  resize: none;
+  width: 420px;
+}
+
+.popup-btn {
+  padding: 10px;
+  cursor: pointer;
+  width: 107px;
+  margin-left: 4px;
+  margin-bottom: 5px;
 }
