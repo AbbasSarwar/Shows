@@ -1,4 +1,6 @@
 import popup from './displaypopup.js';
+import getLikes from './getLikes.js';
+import LikesAdd from './likeCounts.js';
 
 async function retrevingdata() {
   const results = [];
@@ -8,6 +10,7 @@ async function retrevingdata() {
   const dt = Promise.all(results);
   return dt;
 }
+
 const display = async () => {
   const datas = await retrevingdata();
   const container = document.querySelector('.cards');
@@ -15,11 +18,18 @@ const display = async () => {
     container.innerHTML += `
   <div id=${cur.id} class="card">
   <img src="${cur.image.medium}" alt="">
-  <div class="likes"><h4>${cur.name}</h4> <span><span><i class="fa-regular fa-heart"></i></span><br>Likes</span></div>
+  <div class="likes"><h4>${cur.name}</h4> <span><i class="fa-regular fa-heart like-btn" data-id="${cur.id}"></i><br><span data-item-id="${cur.id}" class="add">Likes</span></span></div>
   <button class="comment-btn">Comments</button>
-  <button>Reservations</button>
 </div>
   `;
+    getLikes();
+    const likeBtn = document.querySelectorAll('.like-btn');
+    likeBtn.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const val = Number(e.target.dataset.id);
+        LikesAdd(val);
+      });
+    });
   });
   popup();
 };

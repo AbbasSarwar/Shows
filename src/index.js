@@ -1,5 +1,6 @@
 import './styles.css';
 import retrevingdata from './modules/display.js';
+<<<<<<< HEAD
 // import popup from './modules/displaypopup.js';
 
 fetch('https://api.tvmaze.com/shows/1');
@@ -12,3 +13,9 @@ fetch('https://api.tvmaze.com/shows/1');
 // /apps/abc234/reservations?item_id=item1
 retrevingdata();
 // popup();
+=======
+// import LikesAdd from './modules/likeCounts.js';
+// import getLikes from './modules/getLikes.js';
+
+document.addEventListener('DOMContentLoaded', retrevingdata);
+>>>>>>> feature/LikesFunc
