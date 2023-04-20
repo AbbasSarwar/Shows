@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681934824957" clover="3.2.0">
-  <project timestamp="1681934824957" name="All files">
+<coverage generated="1681935758749" clover="3.2.0">
+  <project timestamp="1681935758749" name="All files">
     <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="11" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
     <file name="countingLikes.js" path="C:\Users\ABBAS\Desktop\Personal\Projects\Shows\src\modules\testing\countingLikes.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

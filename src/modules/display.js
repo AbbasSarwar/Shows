@@ -20,7 +20,6 @@ const display = async () => {
   <img src="${cur.image.medium}" alt="">
   <div class="likes"><h4>${cur.name}</h4> <span><i class="fa-regular fa-heart like-btn" data-id="${cur.id}"></i><br><span data-item-id="${cur.id}" class="add">Likes</span></span></div>
   <button class="comment-btn">Comments</button>
-  <button>Reservations</button>
 </div>
   `;
     getLikes();
