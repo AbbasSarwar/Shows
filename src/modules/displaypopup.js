@@ -1,4 +1,5 @@
 import retrevingdata from './display.js';
+import commentform from './commentform.js';
 
 const body = document.querySelector('body');
 const header = document.querySelector('header');
@@ -8,7 +9,7 @@ const addclasses = () => {
   header.classList.add('blur');
   cardscontainer.classList.add('blur');
   footer.classList.add('blur');
-  body.style.overflow = 'hidden'
+  body.style.overflow = 'hidden';
 };
 
 const removeclasses = () => {
@@ -18,7 +19,7 @@ const removeclasses = () => {
     cardscontainer.classList.remove('blur');
     footer.classList.remove('blur');
     body.lastElementChild.remove();
-    body.style.overflow = 'auto'
+    body.style.overflow = 'auto';
   });
 };
 const displaypopup = async (index) => {
@@ -42,6 +43,12 @@ const displaypopup = async (index) => {
             <h3>Genres: ${newarr.genres[0]},${newarr.genres[1]},${newarr.genres[2]}</h3>
             <h3>Premiered: ${newarr.premiered}</h3>
         </div>
+        <div class="show-comments">
+        </div>
+        <form action="#" method="post">
+            ${commentform()};
+        </form>
+        
     `;
   body.appendChild(div);
   removeclasses();
