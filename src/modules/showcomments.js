@@ -1,3 +1,4 @@
+import commentcounter from './commentscounter.js';
 // const displaydate = () => {
 //   const date = new Date();
 //   const day = date.getDate();
@@ -19,8 +20,6 @@ const showcomments = async (index2) => {
     method: 'GET',
   });
   const data = await commentData.json();
-  h3.innerText = `Comments (${data.length})`;
-  showdiv.appendChild(h3);
 
   if (!commentData.ok) {
     h3.innerText = 'Comments (0)';
@@ -37,6 +36,7 @@ const showcomments = async (index2) => {
   });
 
   popupcontainer.insertBefore(showdiv, form);
+  commentcounter();
 };
 
 const getformvalue = (index) => {
@@ -58,7 +58,9 @@ const getformvalue = (index) => {
       },
     }).then((response) => {
       response.json();
-    });
+    })
+      .then(() => setTimeout(window.location.reload(), 500));
+
     form.reset();
   });
 };
