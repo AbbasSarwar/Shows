@@ -1,4 +1,4 @@
-import './styles.css';
+// import './styles.css';
 import retrevingdata from './modules/display.js';
 
 retrevingdata();
