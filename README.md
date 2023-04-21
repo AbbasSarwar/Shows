@@ -71,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Soon]
+- [Link](https://abbassarwar.github.io/Shows/src/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,6 +119,9 @@ In order to run this project you need:
 👤 **Author2**
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
 - LinkedIn: [zunairkhan811](https://www.linkedin.com/in/zunairkhan811/)
+
+####Documentation 
+- [Video]: [Link](https://drive.google.com/file/d/11_12tOF8K6XA1ZLIavmJ3ApxGrO5AxlF/view)
 - 
 <!-- FUTURE FEATURES -->
 
