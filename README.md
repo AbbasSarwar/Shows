@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>Shows README Template</b></h3>
+  <h3><b>AZ-Shows README Template</b></h3>
 
 </div>
 
@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Shows\] ](#-shows-)
+- [📖 \[AZ-Shows\] ](#-az-shows-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -29,10 +29,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Shows] <a name="about-project"></a>
+# 📖 [AZ-Shows] <a name="about-project"></a>
 
 > Hello , This is a Leaderboard application.
-**[Shows]** is a simple where you can get the shows list and you can like and comment on the favourite one.
+**[AZ-Shows]** is a simple where you can get the shows list and you can like and comment on the favourite one.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,6 +56,12 @@
 
 
 - **[Simple Layout]**
+- **[API SHOWS]**
+- **[API Creating Data]**
+- **[Displaying Comments] from API**
+- **[Displaying Likes from API]**
+- **[Testing COmments & Likes count]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -65,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Soon]
+- [Link](https://abbassarwar.github.io/Shows/src/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,8 +90,8 @@ In order to run this project you need:
 -Commands: npm install
 
 ### Setup
-* git clone https://github.com/AbbasSarwar/Space-Capstone.git
-* cd Space-Capstone
+* git clone https://github.com/AbbasSarwar/Shows.git
+* cd Shows
 * git checkout Development
 
 ### Install
@@ -113,16 +119,15 @@ In order to run this project you need:
 👤 **Author2**
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
 - LinkedIn: [zunairkhan811](https://www.linkedin.com/in/zunairkhan811/)
+
+####Documentation 
+- [Video]: [Link](https://drive.google.com/file/d/11_12tOF8K6XA1ZLIavmJ3ApxGrO5AxlF/view)
 - 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[API score displaying]**
-- [ ] **[Creating new Game]**
-- [ ] **[User create]**
-- [ ] **[Score Update to API]**
-
+- [ ] **[More Flexability UI]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->

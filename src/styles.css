@@ -1,0 +1,291 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #00081d;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 50px;
+  justify-content: center;
+  background-color: rgba(239, 20, 20, 0.4);
+}
+
+header span {
+  border: 2px solid rgb(240, 6, 6);
+  border-radius: 5%;
+  padding: 5px 5px;
+}
+
+header span a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+header h3 {
+  font-weight: 300;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+header nav ul li {
+  padding: 0 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover {
+  color: rgb(66, 244, 17);
+}
+
+header nav ul li:first-child a {
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 20px;
+  color: #fff;
+  background-color: rgba(239, 11, 11, 0.4);
+  text-align: center;
+}
+
+.cards-container {
+  padding: 50px 80px;
+  width: 84%;
+  display: flex;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 100%;
+  border: 1px solid black;
+  background-color: #26073c;
+  border-radius: 3px;
+}
+
+.card button {
+  background-color: red;
+  border-radius: 2px;
+  margin: 3px;
+  font-size: 16px;
+  padding: 3px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+}
+
+.card button:hover {
+  background-color: rgb(40, 40, 103);
+  color: #c9cbf2;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 8px 0;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Likes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.fa-heart {
+  font-size: 30px;
+  color: red;
+  transition: 0.3s;
+}
+
+.fa-heart:hover {
+  transform: scale(1.2);
+}
+
+.add {
+  font-size: 20px;
+  color: #fff;
+}
+
+.Last-like {
+  color: red;
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+  width: 800px;
+  border: 2px solid brown;
+  height: 80%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  background: rgba(44, 3, 117, 0.6);
+  overflow: auto;
+  color: #fff;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image img {
+  padding-top: 10px;
+  width: 40%;
+  height: 50vh;
+  position: relative;
+  left: 10px;
+}
+
+.cross-btn {
+  display: flex;
+  position: relative;
+  left: 182px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.ratingbox {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.genresbox {
+  position: relative;
+  top: 40px;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.genresbox:last-child {
+  position: relative;
+  right: 20px;
+}
+
+.show-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+  position: relative;
+  top: 88px;
+}
+
+.show-comments h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.show-comments p {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  top: 119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+}
+
+form h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+form input {
+  padding: 10px;
+  margin: 20px 5px 5px 5px;
+  width: 285px;
+}
+
+form textarea {
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  border: 1px solid black;
+  resize: none;
+  width: 420px;
+}
+
+.popup-btn {
+  padding: 10px;
+  cursor: pointer;
+  width: 107px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}

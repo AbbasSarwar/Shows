@@ -1,4 +1,4 @@
-## Copyright 2023, [AbbasSarwar]
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [Shows] and associated documentation files, to deal in the [Shows] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [Shows], and to permit persons to whom the [Shows] is furnished to do so, subject to the following conditions:
+## Copyright 2023, [AbbasSarwar & Zunair]
+Permission is hereby granted, free of charge, to any person obtaining a copy of this [AZ-AZ-Shows] and associated documentation files, to deal in the [AZ-AZ-Shows] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [AZ-Shows], and to permit persons to whom the [AZ-Shows] is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [Shows].
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [AZ-Shows].
