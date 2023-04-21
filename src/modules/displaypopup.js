@@ -1,5 +1,6 @@
 import retrevingdata from './display.js';
 import commentform from './commentform.js';
+import { showcomments, getformvalue } from './showcomments.js';
 
 const body = document.querySelector('body');
 const header = document.querySelector('header');
@@ -22,7 +23,7 @@ const removeclasses = () => {
     body.style.overflow = 'auto';
   });
 };
-const displaypopup = async (index) => {
+const displaypopup = async (index, index2) => {
   const array = await retrevingdata();
   const newarr = array[index];
   const div = document.createElement('div');
@@ -43,14 +44,14 @@ const displaypopup = async (index) => {
             <h3>Genres: ${newarr.genres[0]},${newarr.genres[1]},${newarr.genres[2]}</h3>
             <h3>Premiered: ${newarr.premiered}</h3>
         </div>
-        <div class="show-comments">
-        </div>
-        <form action="#" method="post">
-            ${commentform()};
+        <form action="" method="submit">
+            ${commentform()}
         </form>
         
     `;
   body.appendChild(div);
+  getformvalue(index2);
+  showcomments(index2);
   removeclasses();
 };
 const popup = () => {
@@ -58,7 +59,7 @@ const popup = () => {
   commentbtn.forEach((cmtbtn) => {
     cmtbtn.addEventListener('click', (btn) => {
       addclasses();
-      displaypopup(btn.target.parentElement.id - 1);
+      displaypopup(btn.target.parentElement.id - 1, btn.target.parentElement.id);
     });
   });
 };
