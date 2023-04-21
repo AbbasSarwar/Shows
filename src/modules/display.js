@@ -11,6 +11,12 @@ async function retrevingdata() {
   return dt;
 }
 
+const cardscounter = () => {
+  const cardlen = document.querySelector('#cardlen');
+  const cards = document.querySelectorAll('.cards .card');
+  cardlen.innerHTML = `Show(${cards.length})`;
+};
+
 const display = async () => {
   const datas = await retrevingdata();
   const container = document.querySelector('.cards');
@@ -41,6 +47,7 @@ const display = async () => {
       });
     });
   });
+  cardscounter();
   popup();
 };
 

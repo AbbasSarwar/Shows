@@ -48,10 +48,10 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  transition: .4s ;
+  transition: 0.4s;
 }
 
 header nav ul li a:hover {
@@ -145,7 +145,7 @@ footer {
 .fa-heart {
   font-size: 30px;
   color: red;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .fa-heart:hover {
@@ -154,7 +154,7 @@ footer {
 
 .add {
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .Last-like {
