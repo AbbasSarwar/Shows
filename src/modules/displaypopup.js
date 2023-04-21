@@ -69,4 +69,4 @@ const popup = () => {
   });
 };
 
-export default popup;
+export { popup, displaypopup };
