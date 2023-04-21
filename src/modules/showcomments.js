@@ -51,7 +51,8 @@ const getformvalue = (index) => {
     }).then((response) => {
       response.json();
     })
-      .then(() => setTimeout(window.location.reload(), 500));
+      // .then(() => setTimeout(window.location.reload(), 500));
+      document.addEventListener('DOMContentLoaded',showcomments(index))
 
     form.reset();
   });
