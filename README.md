@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>Shows README Template</b></h3>
+  <h3><b>AZ-Shows README Template</b></h3>
 
 </div>
 
@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Shows\] ](#-shows-)
+- [📖 \[AZ-Shows\] ](#-az-shows-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -29,10 +29,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Shows] <a name="about-project"></a>
+# 📖 [AZ-Shows] <a name="about-project"></a>
 
 > Hello , This is a Leaderboard application.
-**[Shows]** is a simple where you can get the shows list and you can like and comment on the favourite one.
+**[AZ-Shows]** is a simple where you can get the shows list and you can like and comment on the favourite one.
 
 ## 🛠 Built With <a name="built-with"></a>
 
