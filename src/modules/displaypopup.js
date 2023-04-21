@@ -30,7 +30,7 @@ const displaypopup = async (index, index2) => {
   div.className = 'popup-container';
   div.innerHTML = `
         <div class="image">
-            <img src="${newarr.image.medium}" alt="cardimg">
+            <img src="${newarr.image.original}" alt="cardimg">
             <span class="cross-btn"><i class="fa-solid fa-x"></i></span>
         </div>
         <div class="heading">
@@ -45,6 +45,9 @@ const displaypopup = async (index, index2) => {
             <h3>Premiered: ${newarr.premiered}</h3>
         </div>
         <form action="" method="submit">
+        <div class="show-comments">
+        </div>
+        <form action="#" method="post">
             ${commentform()}
         </form>
         
@@ -59,7 +62,9 @@ const popup = () => {
   commentbtn.forEach((cmtbtn) => {
     cmtbtn.addEventListener('click', (btn) => {
       addclasses();
-      displaypopup(btn.target.parentElement.id - 1, btn.target.parentElement.id);
+      const btnCall1 = btn.target.parentElement.parentElement.id - 1;
+      const btnCall2 = btn.target.parentElement.parentElement.id;
+      displaypopup(btnCall1, btnCall2);
     });
   });
 };
