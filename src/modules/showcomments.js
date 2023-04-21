@@ -1,12 +1,4 @@
 import commentcounter from './commentscounter.js';
-// const displaydate = () => {
-//   const date = new Date();
-//   const day = date.getDate();
-//   const month = date.getMonth() + 1;
-//   const year = date.getFullYear();
-//   const currentDate = `${day}/${month}/${year}`;
-//   return currentDate;
-// };
 
 const showcomments = async (index2) => {
   const popupcontainer = document.querySelector('.popup-container');
