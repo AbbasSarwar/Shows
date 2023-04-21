@@ -90,8 +90,8 @@ In order to run this project you need:
 -Commands: npm install
 
 ### Setup
-* git clone https://github.com/AbbasSarwar/Space-Capstone.git
-* cd Space-Capstone
+* git clone https://github.com/AbbasSarwar/Shows.git
+* cd Shows
 * git checkout Development
 
 ### Install
