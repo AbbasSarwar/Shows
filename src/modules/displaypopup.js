@@ -44,10 +44,10 @@ const displaypopup = async (index, index2) => {
             <h3>Genres: ${newarr.genres[0]},${newarr.genres[1]},${newarr.genres[2]}</h3>
             <h3>Premiered: ${newarr.premiered}</h3>
         </div>
-        <form action="" method="submit">
+        <form action="" id="forms" method="submit">
         <div class="show-comments">
         </div>
-        <form action="#" method="post">
+        <form action="#" method="">
             ${commentform()}
         </form>
         

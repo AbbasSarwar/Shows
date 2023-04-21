@@ -56,6 +56,12 @@
 
 
 - **[Simple Layout]**
+- **[API SHOWS]**
+- **[API Creating Data]**
+- **[Displaying Comments] from API**
+- **[Displaying Likes from API]**
+- **[Testing COmments & Likes count]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -118,11 +124,7 @@ In order to run this project you need:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[API score displaying]**
-- [ ] **[Creating new Game]**
-- [ ] **[User create]**
-- [ ] **[Score Update to API]**
-
+- [ ] **[More Flexability UI]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
