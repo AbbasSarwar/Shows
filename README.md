@@ -71,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Link](https://abbassarwar.github.io/Shows/src/index.html)
+- [Link](https://abbassarwar.github.io/Shows/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
