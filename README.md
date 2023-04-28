@@ -31,7 +31,7 @@
 
 # 📖 [AZ-Shows] <a name="about-project"></a>
 
-> Hello , This is a Leaderboard application.
+> Hello , This is a Shows list application.
 **[AZ-Shows]** is a simple where you can get the shows list and you can like and comment on the favourite one.
 
 ## 🛠 Built With <a name="built-with"></a>
