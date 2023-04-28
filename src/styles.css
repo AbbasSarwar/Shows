@@ -165,7 +165,7 @@ footer {
   position: fixed;
   left: 50%;
   transition: 0.5s ease-in-out;
-  width: 100%;
+  width: 800px;
   border: 2px solid brown;
   height: 80%;
   top: 5%;
@@ -192,10 +192,10 @@ footer {
 .cross-btn {
   display: flex;
   position: relative;
-  left: 319px;
+  left: 182px;
   top: 20px;
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: white;
   cursor: pointer;
 }
 

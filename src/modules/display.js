@@ -1,4 +1,4 @@
-import popup from './displaypopup.js';
+import { popup } from './displaypopup.js';
 import getLikes from './getLikes.js';
 import LikesAdd from './likeCounts.js';
 

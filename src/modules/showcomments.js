@@ -1,12 +1,10 @@
 import commentcounter from './commentscounter.js';
-// const displaydate = () => {
-//   const date = new Date();
-//   const day = date.getDate();
-//   const month = date.getMonth() + 1;
-//   const year = date.getFullYear();
-//   const currentDate = `${day}/${month}/${year}`;
-//   return currentDate;
-// };
+import { displaypopup } from './displaypopup.js';
+
+const updatecomments = () => {
+  const popupcontainer = document.querySelector('.popup-container');
+  popupcontainer.remove();
+};
 
 const showcomments = async (index2) => {
   const popupcontainer = document.querySelector('.popup-container');
@@ -39,7 +37,7 @@ const showcomments = async (index2) => {
   commentcounter();
 };
 
-const getformvalue = (index) => {
+const getformvalue = async (index) => {
   const form = document.querySelector('form');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -58,11 +56,12 @@ const getformvalue = (index) => {
       },
     }).then((response) => {
       response.json();
-    })
-      .then(() => setTimeout(window.location.reload(), 500));
-
+    }).then(() => {
+      updatecomments();
+      displaypopup(index - 1, index);
+    });
     form.reset();
   });
 };
 
-export { showcomments, getformvalue };
+export { showcomments, getformvalue, updatecomments };
