@@ -1,0 +1,35 @@
+@media only screen and (max-width:786px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    header nav ul li {
+        padding: 0 10px;
+    }
+    header span {
+        margin-left: 10px;
+    }
+
+    header span h3 {
+        padding: 0;
+    }
+
+    .cards-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 10px;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .card {
+       width: 40%;
+       padding: 0;
+    }
+}
